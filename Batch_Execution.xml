@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/automation_guide/Testng_tutorial/src/test/java/Batch_Execution">
+        <classes>
+            <class name="Batch_Execution.Batch_Class2">
+                <methods>
+                    <include name="clas"/>
+                </methods>
+            </class>
+            <class name="Batch_Execution.batch_class1">
+                <methods>
+                    <include name="clas1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
