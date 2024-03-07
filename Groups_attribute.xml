@@ -25,4 +25,16 @@
         </packages>
 
     </test>
+    <test name="ui_test">
+        <groups>
+            <run>
+                <include name="smoke"></include>
+               <exclude name="ui"></exclude>
+            </run>
+        </groups>
+        <packages>
+            <package name="Group_Test_Groups_Attribute"></package>
+        </packages>
+
+    </test>
 </suite>

@@ -23,9 +23,9 @@ public class Login {
         System.out.println("Invalid id and InvPss");
     }
 
-    @Test
+    @Test(groups = {"ui","smoke"})
     public static void NO_Credential() {
-        System.out.println("No credential");
+        System.out.println("No credential uiu+smoke");
     }
 
 }

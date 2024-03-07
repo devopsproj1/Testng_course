@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="E:/automation_guide/Testng_tutorial/src/test/java/Group_Test_Groups_Attribute">
+      <groups>
+          <define name="smoke and ui">
+             <include name="smoke"></include>
+              <include name="ui"></include>
+          </define>
+          <define name="negative and ui">
+              <include name="ui"></include>
+              <include name="negative"></include>
+          </define>
+          <run>
+              <include name="negative and ui"></include>
+              <include name="smoke and ui"></include>
+
+          </run>
+
+
+      </groups>
+        <packages>
+            <package name="Group_Test_Groups_Attribute"></package>
+        </packages>
+
+
+    </test>
+</suite>
